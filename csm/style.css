@@ -1,0 +1,93 @@
+/* Styling the Scroll Bar */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Dat.GUI */
+.dg.ac {
+  z-index: 80 !important;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #888;/* #0d0c0d;*/
+}
+
+#webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  touch-action: none;
+  outline: 0;
+}
+
+#icon {
+  position: fixed;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+  opacity: 0.5;
+  z-index: 8;
+  transition: opacity 200ms;
+}
+
+#icon:hover {
+  opacity: 1;
+}
+
+/* Loading */
+#loading-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0d0c0d;
+  z-index: 79;
+  transition: opacity 0.4s;
+}
+
+#loading-logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  max-height: 20%;
+}
+
+#loading-logo * {
+  fill: #ffffff;
+  animation: logo-anim 5s infinite;
+}
+
+#loading-caption {
+  position: fixed;
+  bottom: 3px;
+  font-size: 0.8em;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  color: #ffffff99;
+  opacity: 0.4;
+}
+
+/* Loading Logo Animation */
+@keyframes logo-anim {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
