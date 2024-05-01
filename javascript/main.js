@@ -195,8 +195,8 @@ class Postprocessing {
       new THREE.ShaderMaterial({
         uniforms: {
           uTime: { value: 0 },
-          uColor: { value: new THREE.Color('#654a8c') },
-          uLightness: { value: 4.9 },
+          uColor: { value: new THREE.Color('#767a9f') },
+          uLightness: { value: 2.87 },
           uContrast: { value: 2.3 },
         },
         vertexShader: /* glsl */ `
